@@ -30,6 +30,10 @@ h2 {
     @apply text-xl font-bold tracking-tight
 }
 
+h3 {
+    @apply md:text-5xl text-3xl font-bold tracking-tight bg-gradient-to-r from-stone-300 to-yellow-700 bg-clip-text text-transparent py-2
+}
+
 .bg {
     @apply bg-black
 }
@@ -41,10 +45,6 @@ h2 {
 .mars-glow {
     box-shadow: 1px 1px 5px #9b5e3c;
     text-shadow: 1px 1px #9b5e3c;
-}
-
-.img {
-    filter: blur(2px);
 }
 
 .error {

@@ -1,7 +1,7 @@
 "use client"
 
 import { ChangeEvent, FormEvent, useState } from "react";
-import { Area, AreaChart, XAxis, YAxis } from "recharts";
+import { Area, AreaChart } from "recharts";
 import { CgArrowRight } from "react-icons/cg";
 import { CiWarning } from "react-icons/ci";
 import { motion } from "framer-motion";
@@ -51,10 +51,10 @@ export default function ChartExample(){
             <div>
                 <h1>Recolect data from mars</h1>
             </div>
-            <form className="flex md:flex-row flex-col justify-center items-center gap-3" onSubmit={handleSubmit}>
-                <input type="text" value={formData.diasini} className="p-2 outline-neutral-500 border rounded placeholder-neutral-500" placeholder="From" name="diasini" onChange={handleChange}/>
+            <form className="flex md:flex-row md:w-fit w-full flex-col justify-center items-center gap-3" onSubmit={handleSubmit}>
+                <input type="text" value={formData.diasini} className="p-2 md:w-fit w-full outline-neutral-500 border rounded placeholder-neutral-500" placeholder="From" name="diasini" onChange={handleChange}/>
                 <h1><CgArrowRight className="md:rotate-0 rotate-90"></CgArrowRight></h1>
-                <input type="text" value={formData.diasfin} className="p-2 outline-neutral-500 border rounded placeholder-neutral-500" placeholder="To" name="diasfin" onChange={handleChange}/>
+                <input type="text" value={formData.diasfin} className="p-2 md:w-fit w-full outline-neutral-500 border rounded placeholder-neutral-500" placeholder="To" name="diasfin" onChange={handleChange}/>
                 <button type="submit" className="btn-primary md:mt-0 mt-6">Generate</button>
             </form>
             <motion.div animate={error ? "open":"closed"} variants={variants} className={error.length > 2 ? "error":"invisible"}>
@@ -66,10 +66,8 @@ export default function ChartExample(){
                     <Area dataKey="y2" stroke="#f97316" fill="#f97316" fillOpacity={1}/>
                 </AreaChart>
             </motion.div>
-            <motion.div animate={data.length != 0 ? "open":"closed"} variants={variants} className="hidden md:flex w-full overflow-x-auto">
-                <AreaChart width={1200} height={300} data={data} className="rounded">
-                    <XAxis dataKey="x" />
-                    <YAxis />
+            <motion.div animate={data.length != 0 ? "open":"closed"} variants={variants} className="hidden p-2 rounded bg-neutral-950 md:flex w-full overflow-x-auto">
+                <AreaChart width={1300} height={300} data={data} className="rounded">
                     <Area dataKey="y" stroke="#f97316" fill="#f97316" fillOpacity={1}/>
                     <Area dataKey="y2" stroke="#f97316" fill="#f97316" fillOpacity={1}/>
                 </AreaChart>

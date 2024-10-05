@@ -24,16 +24,16 @@ export default function Header(){
                     </div>
                     <ul className="hidden md:flex flex-row gap-10 text-neutral-400">
                         <li>
-                            <Link href={"/"}>About</Link>
+                            <Link href={"/about"}>About</Link>
                         </li>
                         <li>
-                        <Link href={"/"}>Project</Link>
+                        <Link href={"/project"}>Project</Link>
                         </li>
                     </ul>
                     <button className="md:hidden p-1 bg-orange-500 rounded" onClick={()=>setOpen(!isOpen)}><CgMenu className="w-8 h-8"></CgMenu></button>
                 </div>
             </div>
-            <motion.nav animate={isOpen ? "open":"closed"} initial="closed" variants={variants} className={"fixed top-0 right-0 w-screen h-screen md:hidden bg-orange-500"}>
+            <motion.nav animate={isOpen ? "open":"closed"} initial="closed" variants={variants} className={"fixed top-0 right-0 w-screen h-screen md:hidden bg-orange-600"}>
                 <div className="container">
                     <div className="flex justify-between py-4 items-center">
                         <div>
@@ -42,9 +42,9 @@ export default function Header(){
                         <button className="md:hidden p-1 bg-orange-500 rounded" onClick={()=>setOpen(!isOpen)}><CgMenu className="w-8 h-8"></CgMenu></button>
                     </div>
                     <div className="flex flex-col gap-3 text-neutral-white justify-center items-center">
-                        <Link href={"/"} className="font-bold text-xl border-white border bg-white/15 rounded w-full p-2">Project</Link>
-                        <Link href={"/"} className="font-bold text-xl border-white border bg-white/15 rounded w-full p-2">About</Link>
-                        <Link href={"/"} className="font-bold text-xl border-white border bg-white/15 rounded w-full p-2">Contact</Link>
+                        <Link href={"/about"} className="inline-flex items-center justify-between font-bold text-xl border-white border bg-white/15 rounded w-full p-2">Project<BsArrowRight/></Link>
+                        <Link href={"/project"} className="inline-flex items-center justify-between font-bold text-xl border-white border bg-white/15 rounded w-full p-2">About<BsArrowRight/></Link>
+                        <Link href={"/"} className="inline-flex items-center justify-between font-bold text-xl border-white border bg-white/15 rounded w-full p-2">Contact<BsArrowRight/></Link>
                         <a className="text-icon link2" target="_blank" href={"https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/yvyryryi/"}>
                             Made by Yvyryrýi <BsArrowRight/>
                         </a>
