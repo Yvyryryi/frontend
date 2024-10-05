@@ -6,6 +6,10 @@ h1 {
     @apply md:text-3xl text-2xl font-extrabold tracking-tight
 }
 
+p {
+    @apply tracking-wider text-neutral-300
+}
+
 .link {
     @apply tracking-tight text-neutral-500 hover:underline
 }
@@ -31,7 +35,7 @@ h2 {
 }
 
 h3 {
-    @apply md:text-5xl text-3xl font-bold tracking-tight bg-gradient-to-r from-stone-300 to-yellow-700 bg-clip-text text-transparent py-2
+    @apply md:text-8xl text-5xl text-center font-bold tracking-tight bg-gradient-to-r from-stone-300 to-yellow-700 bg-clip-text text-transparent py-2
 }
 
 .bg {
@@ -48,9 +52,30 @@ h3 {
 }
 
 .error {
-    @apply p-2 md:w-4/12 w-full inline-flex justify-between px-4 items-center gap-3 bg-red-500/15 border-red-500 text-red-500 rounded border
+    @apply p-2 md:w-3/12 w-full inline-flex justify-between px-4 items-center gap-3 bg-red-500/15 border-red-500 text-red-500 rounded border
 }
 
 li {
     @apply hover:text-white text-neutral-400 duration-200
+}
+
+.glow {
+    filter: drop-shadow(1px 1px 7px #9b5e3c);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #181818;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #363636;
 }

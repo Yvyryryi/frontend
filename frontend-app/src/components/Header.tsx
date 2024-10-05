@@ -33,7 +33,7 @@ export default function Header(){
                     <button className="md:hidden p-1 bg-orange-500 rounded" onClick={()=>setOpen(!isOpen)}><CgMenu className="w-8 h-8"></CgMenu></button>
                 </div>
             </div>
-            <motion.nav animate={isOpen ? "open":"closed"} initial="closed" variants={variants} className={"fixed top-0 right-0 w-screen h-screen md:hidden bg-orange-600"}>
+            <motion.nav animate={isOpen ? "open":"closed"} initial="closed" variants={variants} transition={{x: { bounce: 0 }, opacity: { duration: 0.2 }}} className={"fixed top-0 right-0 w-screen h-screen md:hidden bg-orange-600"}>
                 <div className="container">
                     <div className="flex justify-between py-4 items-center">
                         <div>
