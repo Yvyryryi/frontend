@@ -1,3 +1,5 @@
+import ChartExample from "@/components/ChartExample";
+import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 
 export default function Home() {
@@ -8,6 +10,7 @@ export default function Home() {
         <a className="text-icon" target="_blank" href={"https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/yvyryryi/"}>
           Project by Yvyryrýi <BsArrowRight/>
         </a>
+        <ChartExample></ChartExample>
       </div>
     </>
   );
