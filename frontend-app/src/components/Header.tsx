@@ -22,10 +22,10 @@ export default function Header(){
                 <div className="flex justify-between py-2 items-center">
                     <Logo></Logo>
                     <ul className="hidden md:flex flex-row gap-10 text-neutral-400">
-                        <li>
+                        <li className="hover:text-white duration-200">
                             <Link href={"/about"}>About</Link>
                         </li>
-                        <li>
+                        <li className="hover:text-white duration-200">
                         <Link href={"/project"}>Project</Link>
                         </li>
                     </ul>

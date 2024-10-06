@@ -7,7 +7,7 @@ h1 {
 }
 
 p {
-    @apply tracking-wider text-neutral-300
+    @apply tracking-wider text-neutral-500
 }
 
 .link {
@@ -31,7 +31,7 @@ input {
 }
 
 h1 {
-    @apply text-center text-2xl;
+    @apply text-center text-2xl tracking-widest;
     font-family: var(--font-geist-mono);
 }
 
@@ -79,7 +79,19 @@ h5 {
 }
 
 li {
-    @apply hover:text-white text-neutral-400 duration-200
+    @apply text-neutral-400 text-justify leading-relaxed
+}
+
+p {
+    @apply text-justify text-neutral-300 leading-relaxed
+}
+
+ul {
+    @apply text-justify text-neutral-300
+}
+
+strong {
+    @apply font-extrabold text-white
 }
 
 .glow {

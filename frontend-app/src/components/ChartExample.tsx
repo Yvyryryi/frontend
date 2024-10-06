@@ -50,14 +50,13 @@ export default function ChartExample(){
     return(
         <motion.div className="flex flex-col gap-6 items-center justify-center w-full">
             <div className="text-center">
-                <h1>Recolect data from mars</h1>
+                <h1>Recolect data from <h3>MARS</h3></h1>
             </div>
             <form className={data.length != 0 ? "flex md:flex-row md:w-fit w-10/12 flex-col justify-center items-center gap-3": "flex md:flex-row md:w-fit w-full flex-col justify-center items-center gap-3"} onSubmit={handleSubmit}>
                 <input type="text" value={formData.diasini} className="p-2 md:w-fit w-full outline-neutral-500 border rounded placeholder-neutral-500" placeholder="From" name="diasini" onChange={handleChange}/>
                 <h1><CgArrowRight className="md:rotate-0 rotate-90"></CgArrowRight></h1>
                 <input type="text" value={formData.diasfin} className="p-2 md:w-fit w-full outline-neutral-500 border rounded placeholder-neutral-500" placeholder="To" name="diasfin" onChange={handleChange}/>
                 <button type="submit" className="btn-primary md:mt-0 mt-6">Generate</button>
-                
             </form>
             <motion.div animate={error ? "open":"closed"} variants={variants} className={error.length > 2 ? "error":"invisible"}>
                 {error}<CiWarning className="w-6 h-6"/>
