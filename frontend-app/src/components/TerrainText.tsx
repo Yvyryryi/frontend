@@ -5,7 +5,7 @@ export default function TerrainText({children,}: Readonly<{children: React.React
         <section className="">
             <div className="w-full">
                 <div className="h-full -top-10 w-full right-0">
-                    <h3>{children}</h3>
+                    <h4>{children}</h4>
                 </div>
                 <div className="relative">
                     <Image

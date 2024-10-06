@@ -1,12 +1,16 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Logo(){
     return(
-
             <Link href="/" className="inline-flex justify-center items-center gap-2">
-                <div className="h-10 flex justify-center items-center w-10 rounded-full bg-gradient-to-b from-orange-500 via-yellow-600 to-orange-950">
-
-                </div>
+                <Image
+                    src={"/logo_white.png"}
+                    width={1702}
+                    height={657}
+                    alt="logo_white"
+                    className="w-40"
+                />
             </Link>
     )
 }
