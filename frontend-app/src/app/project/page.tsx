@@ -1,5 +1,7 @@
 "use client"
 
+import Rover from "@/components/Rover";
+import TerrainText from "@/components/TerrainText";
 import { motion } from "framer-motion";
 
 export default function Page(){
@@ -17,6 +19,7 @@ export default function Page(){
                         Sapiente quaerat facere aliquam nisi velit quos?
                         </p>
                     </div>
+                    <TerrainText>Hearing from mars</TerrainText>
                     <div className="flex flex-col gap-3">
                         <h1>People involved</h1>
                         <p>
@@ -26,24 +29,7 @@ export default function Page(){
                         Sapiente quaerat facere aliquam nisi velit quos?
                         </p>
                     </div>
-                    <div className="flex flex-col gap-3">
-                        <h1>People involved</h1>
-                        <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing 
-                        elit. Nulla expedita architecto dolores culpa eum doloremque 
-                        voluptate nobis laboriosam suscipit officiis aut, nam ut! 
-                        Sapiente quaerat facere aliquam nisi velit quos?
-                        </p>
-                    </div>
-                    <div className="flex flex-col gap-3">
-                        <h1>People involved</h1>
-                        <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing 
-                        elit. Nulla expedita architecto dolores culpa eum doloremque 
-                        voluptate nobis laboriosam suscipit officiis aut, nam ut! 
-                        Sapiente quaerat facere aliquam nisi velit quos?
-                        </p>
-                    </div>
+                    <Rover></Rover>
                 </div>
             </div>
         </div>

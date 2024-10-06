@@ -12,7 +12,7 @@ export default function Mars(){
                     height={1080}
                     src={"/marscrop.png"}
                     alt="mars"
-                    className="w-full brightness-125 md:flex hidden"
+                    className="w-full brightness-125 md:flex hidden img-shadow"
                 ></Image>
                 <Image
                     width={2260}
@@ -30,7 +30,7 @@ export default function Mars(){
                         This means that as signals travel farther—like, from Mars to Earth—their strength decreases significantly, requiring careful consideration of power usage, 
                         which we all know is a concern in space.&quot;
                         <Link href="/project" className="p-3 inline-flex not-italic justify-center items-center gap-3 text-white font-bold rounded border hover:animate-pulse hover:bg-white hover:text-black duration-200">
-                            Check out how this project was made <BsArrowRight/>
+                            About the project <BsArrowRight/>
                         </Link>
                     </motion.div>
                 </div>

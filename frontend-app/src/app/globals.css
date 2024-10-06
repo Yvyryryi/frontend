@@ -39,7 +39,7 @@ h3 {
 }
 
 .bg {
-    @apply bg-black
+    @apply bg-gradient-to-b bg-black
 }
 
 .text {
@@ -61,6 +61,11 @@ li {
 
 .glow {
     text-shadow: 0px 0px 20px #9b5e3c;
+}
+
+.img-shadow {
+    -webkit-filter: drop-shadow(0px 0px 50px #9c5900);
+    filter: drop-shadow(0px 0px 60px #3a2300);
 }
 
 ::-webkit-scrollbar {

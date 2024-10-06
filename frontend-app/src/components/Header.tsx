@@ -17,7 +17,7 @@ export default function Header(){
     }
 
     return(
-        <header className="fixed top-0 backdrop-blur-md z-50 w-screen">
+        <header className="fixed top-0 backdrop-blur-xl z-50 w-screen">
             <div className="container">
                 <div className="flex justify-between py-4 items-center">
                     <Logo></Logo>
