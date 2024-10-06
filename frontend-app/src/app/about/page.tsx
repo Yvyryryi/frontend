@@ -15,8 +15,8 @@ export default function Page(){
                             <Card name="Dante Rivarola Dinatale" src="/dante.jpg" occupation="Front end" linkedin="https://www.linkedin.com/in/dante-rivarola-dinatale-264a82289/" instagram="https://www.instagram.com/_drd_04/"/>
                             <Card name="Jorge Enciso" src="/placeholder.jpeg" occupation="Algorithm - Back end"/>
                             <Card name="Angelo Segrado" src="/placeholder.jpeg" occupation="Data Analysis"/>
-                            <Card name="Harumi" src="/placeholder.jpeg" occupation="Design"/>
-                            <Card name="Luciano" src="/placeholder.jpeg" occupation="Design"/>
+                            <Card name="Harumi" src="/placeholder.jpeg" occupation="Design - Marketing"/>
+                            <Card name="Luciano Santiviago" src="/luciano.png" occupation="Design - Marketing" instagram="https://www.instagram.com/luciano_santze/" linkedin="https://www.linkedin.com/in/lucianosantiviago/"/>
                             <Card name="Angelo Serafini" src="/placeholder.jpeg" occupation="Back end"/>
                         </div>
                     </div>
