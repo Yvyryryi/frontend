@@ -9,9 +9,6 @@ export default function SoundForm(){
                 A project by Yvyryrýi <BsArrowRight/>
             </a>
             <ChartExample></ChartExample>
-            <div className="absolute -bottom-96 -left-96 p-4 w-6/12">
-            
-            </div>
         </motion.div>
     )
 }

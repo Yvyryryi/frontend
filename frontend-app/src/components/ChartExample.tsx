@@ -49,7 +49,7 @@ export default function ChartExample(){
 
     return(
         <motion.div className="flex flex-col gap-6 items-center justify-center w-full">
-            <div>
+            <div className="glow">
                 <h1>Recolect data from mars</h1>
             </div>
             <form className={data.length != 0 ? "flex md:flex-row md:w-fit w-10/12 flex-col justify-center items-center gap-3": "flex md:flex-row md:w-fit w-full flex-col justify-center items-center gap-3"} onSubmit={handleSubmit}>
@@ -75,15 +75,14 @@ export default function ChartExample(){
                 </div>
             )
             }
-            
             <motion.div animate={data.length != 0 ? "open":"closed"} variants={variants} className={data.length != 0 ? "md:hidden w-screen md:w-full overflow-x-auto" : "w-20 overflow-hidden md:hidden"}>
-                <AreaChart width={1000} height={300} data={data} className="rounded">
+                <AreaChart width={1000} height={data.length != 0 ? 300: 150} data={data} className="rounded">
                     <Area dataKey="y" stroke="#f97316" fill="#f97316" fillOpacity={1}/>
                     <Area dataKey="y2" stroke="#f97316" fill="#f97316" fillOpacity={1}/>
                 </AreaChart>
             </motion.div>
             <motion.div animate={data.length != 0 ? "open":"closed"} variants={variants} className="hidden p-2 bg-gradient-to-t from-orange-900/10 w-fit to-black rounded-xl md:flex overflow-x-auto">
-                <AreaChart width={1300} height={300} data={data} className="rounded">
+                <AreaChart width={1300} height={data.length != 0 ? 300: 0} data={data} className="rounded transition-all">
                     <Area dataKey="y" stroke="#f97316" fill="#f97316" fillOpacity={1}/>
                     <Area dataKey="y2" stroke="#f97316" fill="#f97316" fillOpacity={1}/>
                 </AreaChart>

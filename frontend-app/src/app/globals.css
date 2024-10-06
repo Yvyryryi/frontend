@@ -60,7 +60,7 @@ li {
 }
 
 .glow {
-    filter: drop-shadow(1px 1px 7px #9b5e3c);
+    text-shadow: 0px 0px 20px #9b5e3c;
 }
 
 ::-webkit-scrollbar {

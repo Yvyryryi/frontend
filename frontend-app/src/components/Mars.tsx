@@ -5,7 +5,7 @@ import { BsArrowRight } from "react-icons/bs"
 
 export default function Mars(){
     return(
-        <section className="pt-10">
+        <section className="pt-10 md:pt-0">
             <motion.div className="w-full relative pt-4">
                 <Image
                     width={2260}
@@ -33,7 +33,6 @@ export default function Mars(){
                             Check out how this project was made <BsArrowRight/>
                         </Link>
                     </motion.div>
-                    
                 </div>
             </motion.div>
         </section>
