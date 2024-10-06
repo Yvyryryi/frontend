@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 h1 {
-    @apply md:text-3xl text-2xl font-extrabold tracking-tight
+    @apply md:text-4xl text-3xl font-extrabold tracking-tight
 }
 
 p {

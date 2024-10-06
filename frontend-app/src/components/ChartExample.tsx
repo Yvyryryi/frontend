@@ -49,7 +49,7 @@ export default function ChartExample(){
 
     return(
         <motion.div className="flex flex-col gap-6 items-center justify-center w-full">
-            <div className="glow">
+            <div className="text-center">
                 <h1>Recolect data from mars</h1>
             </div>
             <form className={data.length != 0 ? "flex md:flex-row md:w-fit w-10/12 flex-col justify-center items-center gap-3": "flex md:flex-row md:w-fit w-full flex-col justify-center items-center gap-3"} onSubmit={handleSubmit}>
