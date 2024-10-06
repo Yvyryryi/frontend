@@ -42,8 +42,8 @@ export default function Header(){
                     </div>
                     <div className="flex flex-col gap-3 text-neutral-white justify-center items-center">
                         <Link href={"/"} onClick={() => setOpen(!isOpen)} className="inline-flex hover:bg-white hover:text-neutral-950 duration-200 items-center justify-between font-bold text-xl border-white border bg-white/15 rounded w-full p-2">Home<BsArrowRight/></Link>
-                        <Link href={"/about"} onClick={() => setOpen(!isOpen)} className="inline-flex hover:bg-white hover:text-neutral-950 duration-200 items-center justify-between font-bold text-xl border-white border bg-white/15 rounded w-full p-2">Project<BsArrowRight/></Link>
-                        <Link href={"/project"} onClick={() => setOpen(!isOpen)} className="inline-flex hover:bg-white hover:text-neutral-950 duration-200 items-center justify-between font-bold text-xl border-white border bg-white/15 rounded w-full p-2">About<BsArrowRight/></Link>
+                        <Link href={"/about"} onClick={() => setOpen(!isOpen)} className="inline-flex hover:bg-white hover:text-neutral-950 duration-200 items-center justify-between font-bold text-xl border-white border bg-white/15 rounded w-full p-2">About<BsArrowRight/></Link>
+                        <Link href={"/project"} onClick={() => setOpen(!isOpen)} className="inline-flex hover:bg-white hover:text-neutral-950 duration-200 items-center justify-between font-bold text-xl border-white border bg-white/15 rounded w-full p-2">Project<BsArrowRight/></Link>
                         <Link href={"/"} onClick={() => setOpen(!isOpen)} className="inline-flex hover:bg-white hover:text-neutral-950 duration-200 items-center justify-between font-bold text-xl border-white border bg-white/15 rounded w-full p-2">Contact<BsArrowRight/></Link>
                         <a className="text-icon link2" target="_blank" href={"https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/yvyryryi/"}>
                             Made by Yvyryrýi <BsArrowRight/>

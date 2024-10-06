@@ -3,7 +3,7 @@ import { FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 export default function Footer(){
     return(
-        <footer className="border-neutral-800 bg-black z-50 sticky">
+        <footer className="border-neutral-800 bg-black z-50 md:sticky">
             <div className="container">
                 <div className="flex w-full items-center justify-between py-5 pb-10">
                     <div className="flex flex-row gap-2">

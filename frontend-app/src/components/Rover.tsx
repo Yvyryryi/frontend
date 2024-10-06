@@ -9,9 +9,9 @@ export default function Rover(){
                     width={1367}
                     height={1367}
                     alt="rover"
-                    className="w-6/12"
+                    className="md:w-6/12"
                 />
-                <div className="flex justify-center items-center p-4 w-6/12">
+                <div className="flex justify-center items-center p-4 md:w-6/12">
                     <h3>Hearing from the rover</h3>
                 </div>
             </div>
