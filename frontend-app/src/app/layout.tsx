@@ -7,8 +7,8 @@ import localFont from "next/font/local";
 
 const dmSans = DM_Sans({ subsets: ["latin"] })
 
-const morderniz = localFont({
-  src: '../../fonts/moderniz.otf',
+const moderniz = localFont({
+  src: '../fonts/Moderniz.otf',
   variable: "--font-geist-mono",
   weight: "100 900",
 });
@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.className} ${morderniz.variable} antialiased bg text`}>
+      <body className={`${dmSans.className} ${moderniz.variable} antialiased bg text`}>
         <Header></Header>
         {children}
         <Footer></Footer>

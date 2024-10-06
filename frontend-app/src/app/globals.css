@@ -30,17 +30,31 @@ input {
     @apply p-2 outline-neutral-500 border rounded placeholder-neutral-500 bg-neutral-900 border-neutral-600
 }
 
+h1 {
+    @apply text-center text-2xl;
+    font-family: var(--font-geist-mono);
+}
+
 h2 {
     @apply text-xl font-bold tracking-tight
 }
 
 h3 {
-    @apply md:text-8xl font-mono text-5xl text-center font-bold tracking-tight bg-gradient-to-r from-stone-300 to-yellow-700 bg-clip-text text-transparent py-2;
+    @apply md:text-8xl text-5xl uppercase text-center font-bold tracking-tight bg-gradient-to-r from-stone-300 to-yellow-700 bg-clip-text text-transparent py-2;
     font-family: var(--font-geist-mono);
 }
 
 h4 {
     @apply md:text-6xl text-3xl text-center font-bold tracking-tight bg-gradient-to-r from-stone-300 to-yellow-700 bg-clip-text text-transparent py-2
+}
+
+h5 {
+    @apply text-start text-xl tracking-tighter text-neutral-300;
+    font-family: var(--font-geist-mono);
+}
+
+.flag {
+    @apply rounded-xl border px-3 py-1 text-neutral-500 border-neutral-500 tracking-tight text-sm w-fit
 }
 
 .bg {

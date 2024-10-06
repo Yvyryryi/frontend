@@ -19,7 +19,7 @@ export default function Header(){
     return(
         <header className="fixed top-0 backdrop-blur-xl z-50 w-screen">
             <div className="container">
-                <div className="flex justify-between py-4 items-center">
+                <div className="flex justify-between py-2 items-center">
                     <Logo></Logo>
                     <ul className="hidden md:flex flex-row gap-10 text-neutral-400">
                         <li>
