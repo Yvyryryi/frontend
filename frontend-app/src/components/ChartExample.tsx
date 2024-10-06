@@ -82,7 +82,7 @@ export default function ChartExample(){
                 </AreaChart>
             </motion.div>
             <motion.div animate={data.length != 0 ? "open":"closed"} variants={variants} className="hidden p-2 bg-gradient-to-t from-orange-900/10 w-fit to-black rounded-xl md:flex overflow-x-auto">
-                <AreaChart width={1300} height={data.length != 0 ? 300: 280} data={data} className="rounded transition-all">
+                <AreaChart width={1350} height={data.length != 0 ? 300: 280} data={data} className="rounded transition-all">
                     <Area dataKey="y" stroke="#f97316" fill="#f97316" fillOpacity={1}/>
                     <Area dataKey="y2" stroke="#f97316" fill="#f97316" fillOpacity={1}/>
                 </AreaChart>

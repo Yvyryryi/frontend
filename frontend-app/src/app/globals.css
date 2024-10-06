@@ -35,7 +35,8 @@ h2 {
 }
 
 h3 {
-    @apply md:text-8xl text-5xl text-center font-bold tracking-tight bg-gradient-to-r from-stone-300 to-yellow-700 bg-clip-text text-transparent py-2
+    @apply md:text-8xl font-mono text-5xl text-center font-bold tracking-tight bg-gradient-to-r from-stone-300 to-yellow-700 bg-clip-text text-transparent py-2;
+    font-family: var(--font-geist-mono);
 }
 
 h4 {

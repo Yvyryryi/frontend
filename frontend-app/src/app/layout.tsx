@@ -3,8 +3,15 @@ import { DM_Sans } from "next/font/google"
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import localFont from "next/font/local";
 
 const dmSans = DM_Sans({ subsets: ["latin"] })
+
+const morderniz = localFont({
+  src: '../../fonts/moderniz.otf',
+  variable: "--font-geist-mono",
+  weight: "100 900",
+});
 
 export const metadata: Metadata = {
   title: "Mars Seismic Detection",
@@ -18,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.className} antialiased bg text`}>
+      <body className={`${dmSans.className} ${morderniz.variable} antialiased bg text`}>
         <Header></Header>
         {children}
         <Footer></Footer>
