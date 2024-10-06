@@ -25,7 +25,7 @@ export default function Card({
             boxShadow: "5px 5px 0 rgba(255, 255, 255, 1)",
             x:"-5%",
             y:"-5%",
-        }} className="flex flex-col gap-4 p-5 rounded-md border border-neutral-700 bg min-h-32 w-full z-50">
+        }} className="flex flex-col gap-4 p-5 rounded-md border border-neutral-700 bg min-h-32 w-full">
             <Image
                 src={src}
                 width={450}
