@@ -1,7 +1,7 @@
 import { BsArrowRight } from "react-icons/bs";
-import ChartExample from "./ChartExample";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import ChartExample from "./ChartExample";
 
 export default function SoundForm(){
     return(
@@ -9,7 +9,7 @@ export default function SoundForm(){
             <Link className="text-icon link"href={"/project"}>
                 How does it work? <BsArrowRight/>
             </Link>
-            <ChartExample></ChartExample>
+            <ChartExample/>
         </motion.div>
     )
 }

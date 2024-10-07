@@ -23,7 +23,7 @@ p {
 }
 
 .btn-primary {
-    @apply inline-flex tracking-tight bg-orange-500 text-white py-2 px-10 rounded hover:bg-orange-400 duration-200
+    @apply inline-flex justify-center items-center tracking-tight bg-orange-500 text-white py-2 px-10 rounded hover:bg-orange-400 duration-200
 }
 
 input {

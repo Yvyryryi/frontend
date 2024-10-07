@@ -6,20 +6,22 @@ import { CgArrowRight, CgScrollH } from "react-icons/cg";
 import { CiWarning } from "react-icons/ci";
 import { motion } from "framer-motion";
 import { FaArrowUp } from "react-icons/fa";
+import { getDataFromDate } from "@/lib/actions";
+import { TbLoader2 } from "react-icons/tb";
 
-export default function ChartExample(){
+export default function Chart(){
     const [error, setError] = useState("")
+    const [loading, setLoading] = useState(false)
+    const [data, setData] = useState([])
     const [formData, setFormData] = useState({
-        diasini: 0,
-        diasfin: 0,
+        diasini: "",
+        diasfin: "",
     })
 
     const variants = {
         open: { opacity: 1, x: 0 },
         closed: { opacity: 0, y: "40%" },
     }
-
-    const [data, setData] = useState<{x:string, y:number, y2:number,}[]>([])
 
     const handleChange = (e:ChangeEvent<HTMLInputElement>) => {
         setFormData({
@@ -28,37 +30,25 @@ export default function ChartExample(){
         })
     }
 
-    const handleSubmit = (e:FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e:FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        setData([])
-        setError("")
-        if(formData.diasfin - formData.diasini > 0){
-            setData(() => {
-                const nuevaLista = [];
-                for (let i = 0; i < formData.diasfin - formData.diasini; i++) {
-                    const num = Math.floor(Math.random() * 1000)
-                    const nuevo = { x: `Day ${i}`, y: num, y2: -num };
-                    nuevaLista.push(nuevo);
-                }
-                return nuevaLista;
-            });
-        } else {
-            setError("Invalid range")
-        }
+        setLoading(true)
+        const res = await getDataFromDate(formData.diasini, formData.diasfin)
+        console.log(res)
+        setLoading(false)
     }
 
     return(
-        <motion.div className="flex flex-col gap-6 items-center justify-center w-full">
-            <div className="text-center">   
-                <p className="text-neutral-500 tracking-tighter">(demo)</p>
+        <div className="flex flex-col gap-6 items-center justify-center w-full">
+            <div className="text-center">
                 <h1>Recolect data from </h1>
                 <h3>MARS</h3>
             </div>
             <form className={data.length != 0 ? "flex md:flex-row md:w-fit w-10/12 flex-col justify-center items-center gap-3": "flex md:flex-row md:w-fit w-full flex-col justify-center items-center gap-3"} onSubmit={handleSubmit}>
-                <input type="text" value={formData.diasini} className="p-2 md:w-fit w-full outline-neutral-500 border rounded placeholder-neutral-500" placeholder="From" name="diasini" onChange={handleChange}/>
+                <input type="datetime-local" value={formData.diasini} className="p-2 md:w-fit w-full outline-neutral-500 border rounded placeholder-neutral-500" placeholder="From" name="diasini" onChange={handleChange}/>
                 <h1><CgArrowRight className="md:rotate-0 rotate-90"></CgArrowRight></h1>
-                <input type="text" value={formData.diasfin} className="p-2 md:w-fit w-full outline-neutral-500 border rounded placeholder-neutral-500" placeholder="To" name="diasfin" onChange={handleChange}/>
-                <button type="submit" className="btn-primary md:mt-0 mt-6">Generate</button>
+                <input type="datetime-local" value={formData.diasfin} className="p-2 md:w-fit w-full outline-neutral-500 border rounded placeholder-neutral-500" placeholder="To" name="diasfin" onChange={handleChange}/>
+                <button type="submit" className="btn-primary md:mt-0 mt-6">{loading ? <TbLoader2 className="w-7 h-7 animate-spin"/>:"Generate"}</button>
             </form>
             <motion.div animate={error ? "open":"closed"} variants={variants} className={error.length > 2 ? "error":"invisible"}>
                 {error}<CiWarning className="w-6 h-6"/>
@@ -88,6 +78,6 @@ export default function ChartExample(){
                     <Area dataKey="y2" stroke="#f97316" fill="#f97316" fillOpacity={1}/>
                 </AreaChart>
             </motion.div>
-        </motion.div>
+        </div>
     )
 }

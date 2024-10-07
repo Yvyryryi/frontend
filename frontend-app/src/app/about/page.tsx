@@ -12,12 +12,12 @@ export default function Page(){
                     <div className="flex flex-col gap-10">
                         <h1>People involved</h1>
                         <div className="grid md:grid-cols-3 grid-cols-1 flex-col gap-3">
-                            <Card name="Dante Rivarola" src="/dante.jpg" occupation="Front end" linkedin="https://www.linkedin.com/in/dante-rivarola-dinatale-264a82289/" instagram="https://www.instagram.com/_drd_04/"/>
-                            <Card name="Jorge Enciso" src="/jorge.jpg" occupation="Algorithm - Back end"/>
+                            <Card name="Dante Rivarola" src="/dante.jpg" occupation="Front end - Web design" linkedin="https://www.linkedin.com/in/dante-rivarola-dinatale-264a82289/" instagram="https://www.instagram.com/_drd_04/"/>
+                            <Card name="Jorge Enciso" src="/jorge.jpg" occupation="Algorithm - Back end" linkedin="https://www.linkedin.com/in/jorge-david-enciso-mart%C3%ADnez-149977265/"/>
                             <Card name="Angelo Segrado" src="/segrado.jpeg" occupation="Data Analysis" linkedin="https://www.linkedin.com/in/angelo-segrado-07689227a/"/>
-                            <Card name="Harumi Encina" src="/harumi.jpg" occupation="Design - Marketing"/>
-                            <Card name="Luciano Santiviago" src="/luciano.png" occupation="Design - Marketing" instagram="https://www.instagram.com/luciano_santze/" linkedin="https://www.linkedin.com/in/lucianosantiviago/"/>
-                            <Card name="Angelo Serafini" src="/serafini.jpg" occupation="Back end"/>
+                            <Card name="Harumi Encina" src="/harumi.jpg" occupation="Design - Promotion" linkedin="https://www.linkedin.com/in/harumi-encina-21765a331/" instagram="https://www.instagram.com/rlyharu/"/>
+                            <Card name="Luciano Santiviago" src="/luciano.png" occupation="Design - Promotion" instagram="https://www.instagram.com/luciano_santze/" linkedin="https://www.linkedin.com/in/lucianosantiviago/"/>
+                            <Card name="Angelo Serafini" src="/serafini.jpg" occupation="Back end" linkedin="https://www.linkedin.com/in/angelo-serafini-4a6443135/"/>
                         </div>
                     </div>
                 </div>
