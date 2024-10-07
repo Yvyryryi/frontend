@@ -19,6 +19,14 @@ export default function Page(){
                             <Card name="Luciano Santiviago" src="/luciano.png" occupation="Design - Promotion" instagram="https://www.instagram.com/luciano_santze/" linkedin="https://www.linkedin.com/in/lucianosantiviago/"/>
                             <Card name="Angelo Serafini" src="/serafini.jpg" occupation="Back end" linkedin="https://www.linkedin.com/in/angelo-serafini-4a6443135/"/>
                         </div>
+                        <div className="flex flex-col gap-3">
+                            <h1>Our story</h1>
+                            <p>Yvyryrýi (Earthquake in Guarani language) reflects the heritage of the developers behind this project. 
+                            Born from a shared passion for science, programming, design, and open data, this solution was ignited from a diverse team united by dreams and friendship. 
+                            Together, we set out to revolutionize how we find a needle in a haystack—or, in this case, detect a Marsquake in a vast sea of data!
+                            Our innovation is an example of the power of collaboration and creativity in tackling the challenges of space exploration and the way we share our discoveries with our community.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

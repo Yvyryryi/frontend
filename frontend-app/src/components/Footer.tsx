@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaInstagram, FaLinkedin } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 
 export default function Footer(){
     return(
@@ -16,11 +16,8 @@ export default function Footer(){
                                 className="w-6"
                             ></Image>
                         </a>
-                        <a href="/">
-                            <FaInstagram className="w-6 h-6"/>
-                        </a>
-                        <a href="/">
-                            <FaLinkedin className="w-6 h-6"/>
+                        <a href="https://github.com/Yvyryryi" target="_blank">
+                            <FaGithub className="w-6 h-6"/>
                         </a>
                     </div>
                     <div className="inline-flex gap-2 justify-center items-center text-neutral-400">

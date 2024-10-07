@@ -3,6 +3,8 @@
 import Rover from "@/components/Rover";
 import TerrainText from "@/components/TerrainText";
 import { motion } from "framer-motion";
+import { RiNextjsFill } from "react-icons/ri";
+import { SiApachedruid, SiFastapi, SiGeopandas, SiLightning, SiPytorch, SiScipy } from "react-icons/si";
 
 
 export default function Page(){
@@ -59,8 +61,34 @@ export default function Page(){
                             </li>
                         </ul>
                     </motion.div>
+                    <motion.div initial={{opacity: 0, y:"50%"}} viewport={{ once: true }} transition={{duration: 0.7}} whileInView={{ opacity: 1,y:"0%"}}>
+                        <h3 className="">The tools</h3>
+                    </motion.div>
                 </div>
             </div>
+            <div className="flex flex-row items-center md:justify-center justify-start md:gap-14 gap-5 py-10 overflow-x-auto">
+                    <a href="https://nextjs.org/" target="_blank">
+                        <RiNextjsFill className="w-40 h-40"/>
+                    </a>
+                    <a href="https://druid.apache.org/" target="_blank">
+                        <SiApachedruid className="w-32 h-32"/>
+                    </a>
+                    <a href="https://pytorch.org/" target="_blank">
+                        <SiPytorch className="w-32 h-32"/>
+                    </a>
+                    <a href="https://pandas.pydata.org/" target="_blank">
+                        <SiGeopandas className="w-32 h-32"/>
+                    </a>
+                    <a href="https://pandas.pydata.org/" target="_blank">
+                        <SiFastapi className="w-32 h-32"/>
+                    </a>
+                    <a href="https://scipy.org/" target="_blank">
+                        <SiScipy className="w-32 h-32"/>
+                    </a>
+                    <a href="https://lightning.ai/docs/pytorch/stable/" target="_blank">
+                        <SiLightning className="w-32 h-32"/>
+                    </a>
+                </div>
         </div>
     )
 }
