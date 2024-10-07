@@ -1,46 +1,44 @@
 "use client"
 
-import { ChangeEvent, FormEvent, useState } from "react";
-import { Area, AreaChart } from "recharts";
-import { CgArrowRight, CgScrollH } from "react-icons/cg";
-import { CiWarning } from "react-icons/ci";
-import { motion } from "framer-motion";
-import { FaArrowUp } from "react-icons/fa";
-import { getDataFromDate } from "@/lib/actions";
-import { TbLoader2 } from "react-icons/tb";
+// import { ChangeEvent, FormEvent, useState } from "react";
+// import { Area, AreaChart } from "recharts";
+// import { CgArrowRight, CgScrollH } from "react-icons/cg";
+// import { CiWarning } from "react-icons/ci";
+// import { motion } from "framer-motion";
+// import { FaArrowUp } from "react-icons/fa";
+// import { getDataFromDate } from "@/lib/actions";
+// import { TbLoader2 } from "react-icons/tb";
 
 export default function Chart(){
-    const [error, setError] = useState("")
-    const [loading, setLoading] = useState(false)
-    const [data, setData] = useState([])
-    const [formData, setFormData] = useState({
-        diasini: "",
-        diasfin: "",
-    })
+    // const [loading, setLoading] = useState(false)
+    // const [formData, setFormData] = useState({
+    //     diasini: "",
+    //     diasfin: "",
+    // })
 
-    const variants = {
-        open: { opacity: 1, x: 0 },
-        closed: { opacity: 0, y: "40%" },
-    }
+    // const variants = {
+    //     open: { opacity: 1, x: 0 },
+    //     closed: { opacity: 0, y: "40%" },
+    // }
 
-    const handleChange = (e:ChangeEvent<HTMLInputElement>) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
-        })
-    }
+    // const handleChange = (e:ChangeEvent<HTMLInputElement>) => {
+    //     setFormData({
+    //         ...formData,
+    //         [e.target.name]: e.target.value
+    //     })
+    // }
 
-    const handleSubmit = async (e:FormEvent<HTMLFormElement>) => {
-        e.preventDefault()
-        setLoading(true)
-        const res = await getDataFromDate(formData.diasini, formData.diasfin)
-        console.log(res)
-        setLoading(false)
-    }
+    // const handleSubmit = async (e:FormEvent<HTMLFormElement>) => {
+    //     e.preventDefault()
+    //     setLoading(true)
+    //     const res = await getDataFromDate(formData.diasini, formData.diasfin)
+    //     console.log(res)
+    //     setLoading(false)
+    // }
 
     return(
         <div className="flex flex-col gap-6 items-center justify-center w-full">
-            <div className="text-center">
+            {/* <div className="text-center">
                 <h1>Recolect data from </h1>
                 <h3>MARS</h3>
             </div>
@@ -77,7 +75,7 @@ export default function Chart(){
                     <Area dataKey="y" stroke="#f97316" fill="#f97316" fillOpacity={1}/>
                     <Area dataKey="y2" stroke="#f97316" fill="#f97316" fillOpacity={1}/>
                 </AreaChart>
-            </motion.div>
+            </motion.div> */}
         </div>
     )
 }
